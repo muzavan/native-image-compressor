@@ -26,8 +26,8 @@ namespace ImageCompressor.Business.Test.UnitTest
             string blueSkyName = Resizer.GetNewFileName(string.Format(FileTestPathFormat, "Blue Sky.jpg"), 50);
             string marbleName = Resizer.GetNewFileName(string.Format(FileTestPathFormat, "Marbles.PNG"), 78);
 
-            Assert.AreEqual(blueSkyName, string.Format(FileTestPathFormat, "50_compressed_Blue Sky.jpg"));
-            Assert.AreEqual(marbleName, string.Format(FileTestPathFormat, "78_compressed_Marbles.PNG"));
+            Assert.AreEqual(blueSkyName, string.Format(FileTestPathFormat, "Blue Sky_50_compressed.jpg"));
+            Assert.AreEqual(marbleName, string.Format(FileTestPathFormat, "Marbles_78_compressed.PNG"));
         }
 
         [TestMethod]

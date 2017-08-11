@@ -25,10 +25,16 @@ namespace ImageCompressor.Business.Resizer.Class
         public string GetNewFileName(string oldFileName, int quality)
         {
             var newFileNameBuilder = new StringBuilder(); ;
-            var lastBackSlash = oldFileName.LastIndexOf('\\');
-            if (lastBackSlash != -1)
+            var lastDot = oldFileName.LastIndexOf('.');
+            if (lastDot == -1) // Somehow, file does not have any extensions
             {
-                newFileNameBuilder.AppendFormat("{0}\\{1}_compressed_{2}", oldFileName.Substring(0, lastBackSlash), quality, oldFileName.Substring(lastBackSlash + 1)); //lastBackSlash should not be last character
+                newFileNameBuilder.AppendFormat("{0}_{1}_compressed",oldFileName,quality);
+            }
+            else
+            {
+                var newFileName = oldFileName.Substring(0, lastDot);
+                var extension = oldFileName.Substring(lastDot);
+                newFileNameBuilder.AppendFormat("{0}_{1}_compressed{2}",newFileName,quality,extension);
             }
             return newFileNameBuilder.ToString();
         }
