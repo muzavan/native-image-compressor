@@ -28,7 +28,7 @@ namespace ImageResizer.Business.Resizer.Class
             var lastBackSlash = oldFileName.LastIndexOf('\\');
             if (lastBackSlash != -1)
             {
-                newFileNameBuilder.AppendFormat("{0}\\{1}_compressed_{2}", oldFileName.Substring(0, lastBackSlash + 1), quality, oldFileName.Substring(lastBackSlash + 1)); //lastBackSlash should not be last character
+                newFileNameBuilder.AppendFormat("{0}\\{1}_compressed_{2}", oldFileName.Substring(0, lastBackSlash), quality, oldFileName.Substring(lastBackSlash + 1)); //lastBackSlash should not be last character
             }
             return newFileNameBuilder.ToString();
         }
