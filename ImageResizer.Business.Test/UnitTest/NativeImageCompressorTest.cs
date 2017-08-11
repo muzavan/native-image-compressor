@@ -1,4 +1,4 @@
-﻿using ImageCompressor.Business.Resizer.Class;
+﻿using ImageCompressor.Business.Compressor.Class;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;

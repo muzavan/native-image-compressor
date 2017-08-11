@@ -44,9 +44,9 @@
   <ItemGroup>
     <Compile Include="Populator\ImagePopulator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resizer\Class\AbstractImageResizer.cs" />
-    <Compile Include="Resizer\Class\NativeImageResizer.cs" />
-    <Compile Include="Resizer\Interface\IResizer.cs" />
+    <Compile Include="Compressor\Class\AbstractImageCompressor.cs" />
+    <Compile Include="Compressor\Class\NativeImageCompressor.cs" />
+    <Compile Include="Compressor\Interface\ICompressor.cs" />
     <Compile Include="Util\ConfigUtil.cs" />
   </ItemGroup>
   <ItemGroup />

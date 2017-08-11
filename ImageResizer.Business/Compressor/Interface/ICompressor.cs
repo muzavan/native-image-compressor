@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImageCompressor.Business.Resizer.Interface
+namespace ImageCompressor.Business.Compressor.Interface
 {
     interface ICompressor
     {

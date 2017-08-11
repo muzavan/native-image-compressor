@@ -1,9 +1,9 @@
-﻿using ImageCompressor.Business.Resizer.Interface;
+﻿using ImageCompressor.Business.Compressor.Interface;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Text;
 
-namespace ImageCompressor.Business.Resizer.Class
+namespace ImageCompressor.Business.Compressor.Class
 {
     public abstract class AbstractImageCompressor : ICompressor
     {

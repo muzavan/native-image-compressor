@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ImageCompressor.Business.Resizer.Interface;
+using ImageCompressor.Business.Compressor.Interface;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace ImageCompressor.Business.Resizer.Class
+namespace ImageCompressor.Business.Compressor.Class
 {
     public class NativeImageCompressor : AbstractImageCompressor
     {
