@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 namespace ImageResizer.Business.Test.UnitTest
 {
     [TestClass]
-    public class ImageResizerTest
+    public class NativeImageResizerTest
     {
         public AbstractImageResizer Resizer;
         public string FileTestPathFormat = @"D:\My Toy\C#\ImageResizer\ImageResizer.Business.Test\UnitTest\TestFiles\{0}";
 
-        public ImageResizerTest()
+        public NativeImageResizerTest()
         {
             Resizer = new NativeImageResizer();
         }
