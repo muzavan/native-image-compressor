@@ -52,13 +52,13 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest\AbstractImageResizerTest.cs" />
-    <Compile Include="UnitTest\NativeImageResizerTest.cs" />
+    <Compile Include="UnitTest\AbstractImageCompressorTest.cs" />
+    <Compile Include="UnitTest\NativeImageCompressorTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ImageResizer.Business\ImageResizer.Business.csproj">
+    <ProjectReference Include="..\ImageResizer.Business\ImageCompressor.Business.csproj">
       <Project>{0d654938-279f-4076-8076-42817f14984b}</Project>
-      <Name>ImageResizer.Business</Name>
+      <Name>ImageCompressor.Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
