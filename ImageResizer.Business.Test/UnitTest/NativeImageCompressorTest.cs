@@ -19,7 +19,7 @@ namespace ImageCompressor.Business.Test.UnitTest
 
         public NativeImageCompressorTest()
         {
-            Resizer = new NativeImageResizer();
+            Resizer = new NativeImageCompressor();
         }
 
         [TestMethod]
