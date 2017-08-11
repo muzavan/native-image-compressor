@@ -25,11 +25,8 @@ namespace ImageCompressor.Business.Test.UnitTest
         [TestMethod]
         public void TestResize()
         {
-            var newBlue = Resizer.Resize(string.Format(FileTestPathFormat, "Blue Sky.jpg"), 0);
-            var newMarble = Resizer.Resize(string.Format(FileTestPathFormat, "Marbles.PNG"), 30);
-
+            var newBlue = Resizer.Resize(string.Format(FileTestPathFormat, "Blue Sky.jpg"), 100);
             Assert.IsTrue(_IsSuccessfulResize(newBlue, string.Format(FileTestPathFormat, "Blue Sky.jpg")));
-            Assert.IsTrue(_IsSuccessfulResize(newMarble, string.Format(FileTestPathFormat, "Marbles.PNG")));
         }
 
 
