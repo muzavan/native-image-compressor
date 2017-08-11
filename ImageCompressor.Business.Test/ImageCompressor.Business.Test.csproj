@@ -6,8 +6,8 @@
     <ProjectGuid>{6D8CA688-1A22-48DD-83AE-F21CB63EE4D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImageResizer.Business.Test</RootNamespace>
-    <AssemblyName>ImageResizer.Business.Test</AssemblyName>
+    <RootNamespace>ImageCompressor.Business.Test</RootNamespace>
+    <AssemblyName>ImageCompressor.Business.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -59,7 +59,7 @@
     <Compile Include="UnitTest\ImagePopulatorTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ImageResizer.Business\ImageCompressor.Business.csproj">
+    <ProjectReference Include="..\ImageCompressor.Business\ImageCompressor.Business.csproj">
       <Project>{0d654938-279f-4076-8076-42817f14984b}</Project>
       <Name>ImageCompressor.Business</Name>
     </ProjectReference>

@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompressor.Executable", "ImageCompressor.Executable.csproj", "{D870DBBD-3147-4673-81BE-EA0A4C678056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompressor.Business", "ImageResizer.Business\ImageCompressor.Business.csproj", "{0D654938-279F-4076-8076-42817F14984B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompressor.Business", "ImageCompressor.Business\ImageCompressor.Business.csproj", "{0D654938-279F-4076-8076-42817F14984B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompressor.Business.Test", "ImageResizer.Business.Test\ImageCompressor.Business.Test.csproj", "{6D8CA688-1A22-48DD-83AE-F21CB63EE4D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompressor.Business.Test", "ImageCompressor.Business.Test\ImageCompressor.Business.Test.csproj", "{6D8CA688-1A22-48DD-83AE-F21CB63EE4D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

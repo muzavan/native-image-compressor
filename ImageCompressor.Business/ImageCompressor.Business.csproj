@@ -7,8 +7,8 @@
     <ProjectGuid>{0D654938-279F-4076-8076-42817F14984B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImageResizer.Business</RootNamespace>
-    <AssemblyName>ImageResizer.Business</AssemblyName>
+    <RootNamespace>ImageCompressor.Business</RootNamespace>
+    <AssemblyName>ImageCompressor.Business</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
