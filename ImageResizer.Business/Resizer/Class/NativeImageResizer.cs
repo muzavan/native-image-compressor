@@ -8,7 +8,7 @@ using System.Drawing.Imaging;
 
 namespace ImageResizer.Business.Resizer.Class
 {
-    public class ImageResizer : AbstractImageResizer
+    public class NativeImageResizer : AbstractImageResizer
     {
         public override bool Resize(string filePath, int quality)
         {
