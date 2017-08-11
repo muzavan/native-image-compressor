@@ -10,23 +10,23 @@ namespace ImageResizer.Business.Resizer.Class
 {
     public class NativeImageResizer : AbstractImageResizer
     {
-        public override bool Resize(string filePath, int quality)
+        public override string Resize(string filePath, int quality)
         {
             using (var bmp = new Bitmap(filePath))
             {
                 var imageCodec = GetImageCodec(bmp);
                 if (imageCodec == null)
                 {
-                    return false;
+                    return null;
                 }
 
                 var qualityEncoder = Encoder.Quality;
                 var encoderParameters = new EncoderParameters(1); // Only gonna modify quality parameters ("qualityEncoderParameter")
                 var qualityEncoderParameter = new EncoderParameter(qualityEncoder, quality);
                 encoderParameters.Param[0] = qualityEncoderParameter;
-                bmp.Save(GetNewFileName(filePath,quality),imageCodec, encoderParameters);
-
-                return true;
+                var newFile = GetNewFileName(filePath, quality);
+                bmp.Save(newFile,imageCodec, encoderParameters);
+                return newFile;
             };
         }
 

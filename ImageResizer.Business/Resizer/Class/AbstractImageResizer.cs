@@ -7,7 +7,7 @@ namespace ImageResizer.Business.Resizer.Class
 {
     public abstract class AbstractImageResizer : IResizer
     {
-        public abstract bool Resize(string filePath, int quality = 100);
+        public abstract string Resize(string filePath, int quality = 100);
 
         public ImageCodecInfo GetImageCodec(Bitmap bmp)
         {
