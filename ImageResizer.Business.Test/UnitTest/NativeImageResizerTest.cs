@@ -22,26 +22,6 @@ namespace ImageResizer.Business.Test.UnitTest
         }
 
         [TestMethod]
-        public void TestGetName()
-        {
-            string blueSkyName = Resizer.GetNewFileName(string.Format(FileTestPathFormat,"Blue Sky.jpg"),50);
-            string marbleName = Resizer.GetNewFileName(string.Format(FileTestPathFormat, "Marbles.PNG"), 78);
-
-            Assert.AreEqual(blueSkyName,string.Format(FileTestPathFormat,"50_compressed_Blue Sky.jpg"));
-            Assert.AreEqual(marbleName, string.Format(FileTestPathFormat, "78_compressed_Marbles.PNG"));
-        }
-
-        [TestMethod]
-        public void TestGetImageCodec()
-        {
-            var blueSkyCodec = Resizer.GetImageCodec(new Bitmap(string.Format(FileTestPathFormat, "Blue Sky.jpg")));
-            var marbleCodec = Resizer.GetImageCodec(new Bitmap(string.Format(FileTestPathFormat, "Marbles.PNG")));
-
-            Assert.IsNotNull(blueSkyCodec);
-            Assert.IsNotNull(marbleCodec);
-        }
-
-        [TestMethod]
         public void TestResize()
         {
             Resizer.Resize(string.Format(FileTestPathFormat, "Blue Sky.jpg"), 0);
