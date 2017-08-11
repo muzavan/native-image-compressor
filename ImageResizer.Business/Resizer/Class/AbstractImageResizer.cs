@@ -1,11 +1,11 @@
-﻿using ImageResizer.Business.Resizer.Interface;
+﻿using ImageCompressor.Business.Resizer.Interface;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Text;
 
-namespace ImageResizer.Business.Resizer.Class
+namespace ImageCompressor.Business.Resizer.Class
 {
-    public abstract class AbstractImageResizer : IResizer
+    public abstract class AbstractImageCompressor : ICompressor
     {
         public abstract string Resize(string filePath, int quality = 100);
 

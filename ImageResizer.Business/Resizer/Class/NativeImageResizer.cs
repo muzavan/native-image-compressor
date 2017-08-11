@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ImageResizer.Business.Resizer.Interface;
+using ImageCompressor.Business.Resizer.Interface;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace ImageResizer.Business.Resizer.Class
+namespace ImageCompressor.Business.Resizer.Class
 {
-    public class NativeImageResizer : AbstractImageResizer
+    public class NativeImageResizer : AbstractImageCompressor
     {
         public override string Resize(string filePath, int quality)
         {

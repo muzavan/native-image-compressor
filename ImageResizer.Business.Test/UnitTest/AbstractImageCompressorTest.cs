@@ -1,4 +1,4 @@
-﻿using ImageResizer.Business.Resizer.Class;
+﻿using ImageCompressor.Business.Resizer.Class;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImageResizer.Business.Test.UnitTest
+namespace ImageCompressor.Business.Test.UnitTest
 {
     [TestClass]
-    public class AbstractImageResizerTest
+    public class AbstractImageCompressorTest
     {
-        public AbstractImageResizer Resizer;
+        public AbstractImageCompressor Resizer;
         public string FileTestPathFormat = @"D:\My Toy\C#\ImageResizer\ImageResizer.Business.Test\UnitTest\TestFiles\{0}";
 
-        public AbstractImageResizerTest()
+        public AbstractImageCompressorTest()
         {
             Resizer = new NativeImageResizer();
         }
