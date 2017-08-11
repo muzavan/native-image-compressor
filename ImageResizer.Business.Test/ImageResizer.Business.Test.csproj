@@ -52,7 +52,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest\ImageResizerTest.cs" />
+    <Compile Include="UnitTest\AbstractImageResizerTest.cs" />
+    <Compile Include="UnitTest\NativeImageResizerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ImageResizer.Business\ImageResizer.Business.csproj">
