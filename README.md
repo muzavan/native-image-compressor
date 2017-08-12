@@ -1,5 +1,5 @@
 # native-image-compressor
-Image compressing project using GDI+ by .NET. This was used to compress multi-files on you local computer at once. You can download the exe and dependency in `bin\Debug` and configure the `ImageCompressor.exe.config`.
+Image compressing project using GDI+ by .NET. This was used to compress multi-files on you local computer at once. You can download the exe and dependency [this folder](https://github.com/muzavan/native-image-compressor/tree/master/bin/Debug) as link and configure the `ImageCompressor.exe.config`.
 
 # Configuration
 Pretty straight-forward.
