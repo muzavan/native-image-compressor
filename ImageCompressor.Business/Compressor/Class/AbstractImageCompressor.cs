@@ -1,4 +1,5 @@
 ﻿using ImageCompressor.Business.Compressor.Interface;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Text;
@@ -7,7 +8,16 @@ namespace ImageCompressor.Business.Compressor.Class
 {
     public abstract class AbstractImageCompressor : ICompressor
     {
-        public abstract string Resize(string filePath, int quality = 100);
+        public abstract string Resize(string filePath, int quality = 50);
+        public List<string> BatchResize(List<string> filePaths, int quality = 50)
+        {
+            var resultPaths = new List<string>();
+            foreach (var filePath in filePaths)
+            {
+                resultPaths.Add(Resize(filePath,quality));
+            }
+            return resultPaths;
+        }
 
         public ImageCodecInfo GetImageCodec(Bitmap bmp)
         {

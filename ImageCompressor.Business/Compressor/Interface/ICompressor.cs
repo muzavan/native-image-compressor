@@ -8,6 +8,8 @@ namespace ImageCompressor.Business.Compressor.Interface
 {
     interface ICompressor
     {
-        string Resize(string filePath, int quality = 100);
+        string Resize(string filePath, int quality = 50);
+
+        List<string> BatchResize(List<string> filePaths, int quality = 50);
     }
 }

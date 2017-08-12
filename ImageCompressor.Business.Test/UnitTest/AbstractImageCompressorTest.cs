@@ -39,5 +39,13 @@ namespace ImageCompressor.Business.Test.UnitTest
             Assert.IsNotNull(blueSkyCodec);
             Assert.IsNotNull(marbleCodec);
         }
+
+        [TestMethod]
+        public void TestBatchResize()
+        {
+            var paths = new List<string>() { string.Format(FileTestPathFormat, "Blue Sky.jpg"), string.Format(FileTestPathFormat, "Marbles.PNG") };
+            var result = Resizer.BatchResize(paths,23);
+            Assert.AreEqual(paths.Count, result.Count);
+        }
     }
 }
