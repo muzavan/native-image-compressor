@@ -14,7 +14,7 @@ namespace ImageCompressor.Business.Util
         private AbstractImageCompressor _Compressor;
         private int _Quality;
 
-        public ImageCompressionUtil(int quality) : this(ConfigUtil.GetFolderPath(), quality)
+        public ImageCompressionUtil() : this(ConfigUtil.GetFolderPath(), ConfigUtil.GetImageQuality())
         {
             // do nothing
         }
