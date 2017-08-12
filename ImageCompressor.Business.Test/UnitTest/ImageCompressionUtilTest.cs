@@ -12,14 +12,12 @@ namespace ImageCompressor.Business.Test.UnitTest
 
         public ImageCompressionUtilTest()
         {
-            _Util = new Util.ImageCompressionUtil<NativeImageCompressor>(50);
+            _Util = new Util.ImageCompressionUtil<NativeImageCompressor>();
         }
         [TestMethod]
         public void TestCompress()
         {
-            var stopwatch = Stopwatch.StartNew();
             _Util.Compress();
-            var time = stopwatch.ElapsedMilliseconds;
         }
     }
 }
