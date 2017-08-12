@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImageResizer.Business.Util
+namespace ImageCompressor.Business.Util
 {
     public class ConfigUtil
     {
@@ -18,7 +18,7 @@ namespace ImageResizer.Business.Util
 
         public static string GetFolderPath()
         {
-            var path = string.IsNullOrEmpty(_GetConfig(ConfigConstant.FOLDER_PATH)) ? @"D:\My Toy\C#\ImageResizer\ImageResizer.Business.Test\UnitTest\TestFiles\" : _GetConfig(ConfigConstant.FOLDER_PATH);
+            var path = string.IsNullOrEmpty(_GetConfig(ConfigConstant.FOLDER_PATH)) ? @"D:\My Toy\C#\ImageCompressor\ImageCompressor.Business.Test\UnitTest\TestFiles\" : _GetConfig(ConfigConstant.FOLDER_PATH);
             return path;
         }
 

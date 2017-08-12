@@ -15,7 +15,7 @@ namespace ImageCompressor.Business.Test.UnitTest
     public class NativeImageCompressorTest
     {
         public AbstractImageCompressor Resizer;
-        public string FileTestPathFormat = @"D:\My Toy\C#\ImageResizer\ImageResizer.Business.Test\UnitTest\TestFiles\{0}";
+        public string FileTestPathFormat = @"D:\My Toy\C#\ImageCompressor\ImageCompressor.Business.Test\UnitTest\TestFiles\{0}";
 
         public NativeImageCompressorTest()
         {

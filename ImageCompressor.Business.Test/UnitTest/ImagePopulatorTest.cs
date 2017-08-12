@@ -1,13 +1,13 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ImageResizer.Business.Populator;
+using ImageCompressor.Business.Populator;
 
-namespace ImageResizer.Business.Test.UnitTest
+namespace ImageCompressor.Business.Test.UnitTest
 {
     [TestClass]
     public class ImagePopulatorTest
     {
-        public string FileTestPathFormat = @"D:\My Toy\C#\ImageResizer\ImageResizer.Business.Test\UnitTest\TestFiles\{0}";
+        public string FileTestPathFormat = @"D:\My Toy\C#\ImageCompressor\ImageCompressor.Business.Test\UnitTest\TestFiles\{0}";
         public ImagePopulator populator;
 
         public ImagePopulatorTest()

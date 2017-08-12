@@ -1,4 +1,4 @@
-﻿using ImageResizer.Business.Util;
+﻿using ImageCompressor.Business.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImageResizer.Business.Populator
+namespace ImageCompressor.Business.Populator
 {
     public class ImagePopulator
     {
