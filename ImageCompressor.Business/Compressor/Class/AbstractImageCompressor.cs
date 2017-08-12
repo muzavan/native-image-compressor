@@ -2,6 +2,7 @@
 using ImageCompressor.Business.Util;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Text;
@@ -15,6 +16,7 @@ namespace ImageCompressor.Business.Compressor.Class
         public abstract string Resize(string filePath, int quality = 50);
         public void BatchResize(List<string> filePaths, int quality = 50)
         {
+            var swatch = Stopwatch.StartNew();
             Parallel.ForEach(filePaths, (filePath) =>
             {
                 try
@@ -27,6 +29,7 @@ namespace ImageCompressor.Business.Compressor.Class
                 }
                 
             });
+            _Log.InfoFormat("Done in {0} ms", swatch.ElapsedMilliseconds);
         }
 
         public ImageCodecInfo GetImageCodec(Bitmap bmp)
