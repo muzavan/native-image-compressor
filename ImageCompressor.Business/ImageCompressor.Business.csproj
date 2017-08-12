@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\bin\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -48,6 +51,8 @@
     <Compile Include="Compressor\Class\NativeImageCompressor.cs" />
     <Compile Include="Compressor\Interface\ICompressor.cs" />
     <Compile Include="Util\ConfigUtil.cs" />
+    <Compile Include="Util\ImageCompressionUtil.cs" />
+    <Compile Include="Util\LogUtil.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

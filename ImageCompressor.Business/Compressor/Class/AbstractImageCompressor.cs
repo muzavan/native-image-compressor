@@ -1,4 +1,6 @@
 ﻿using ImageCompressor.Business.Compressor.Interface;
+using ImageCompressor.Business.Util;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -9,12 +11,21 @@ namespace ImageCompressor.Business.Compressor.Class
 {
     public abstract class AbstractImageCompressor : ICompressor
     {
+        private static log4net.ILog _Log = LogUtil.GetInstance().GetLogger(typeof(AbstractImageCompressor).ToString());
         public abstract string Resize(string filePath, int quality = 50);
         public void BatchResize(List<string> filePaths, int quality = 50)
         {
             Parallel.ForEach(filePaths, (filePath) =>
             {
-                Resize(filePath, quality);
+                try
+                {
+                    Resize(filePath, quality);
+                }
+                catch (Exception ex)
+                {
+                    _Log.InfoFormat("Can't compress {0} because of {1} ",filePath,ex);
+                }
+                
             });
         }
 
