@@ -57,6 +57,7 @@
     <Compile Include="UnitTest\AbstractImageCompressorTest.cs" />
     <Compile Include="UnitTest\NativeImageCompressorTest.cs" />
     <Compile Include="UnitTest\ImagePopulatorTest.cs" />
+    <Compile Include="UnitTest\ImageCompressionUtilTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ImageCompressor.Business\ImageCompressor.Business.csproj">
