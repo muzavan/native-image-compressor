@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ImageCompressor.Business.Compressor.Class
 {
     public abstract class AbstractImageCompressor : ICompressor
     {
         public abstract string Resize(string filePath, int quality = 50);
-        public List<string> BatchResize(List<string> filePaths, int quality = 50)
+        public void BatchResize(List<string> filePaths, int quality = 50)
         {
-            var resultPaths = new List<string>();
-            foreach (var filePath in filePaths)
+            Parallel.ForEach(filePaths, (filePath) =>
             {
-                resultPaths.Add(Resize(filePath,quality));
-            }
-            return resultPaths;
+                Resize(filePath, quality);
+            });
         }
 
         public ImageCodecInfo GetImageCodec(Bitmap bmp)

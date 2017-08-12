@@ -44,8 +44,7 @@ namespace ImageCompressor.Business.Test.UnitTest
         public void TestBatchResize()
         {
             var paths = new List<string>() { string.Format(FileTestPathFormat, "Blue Sky.jpg"), string.Format(FileTestPathFormat, "Marbles.PNG") };
-            var result = Resizer.BatchResize(paths,23);
-            Assert.AreEqual(paths.Count, result.Count);
+            Resizer.BatchResize(paths, 23);
         }
     }
 }
