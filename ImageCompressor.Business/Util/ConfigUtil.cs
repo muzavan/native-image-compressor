@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ImageCompressor.Business.Util
 {
-    public class ConfigUtil
+    public static class ConfigUtil
     {
         public static string GetFolderPath()
         {
@@ -15,7 +15,7 @@ namespace ImageCompressor.Business.Util
             return path;
         }
 
-        public int GetImageQuality()
+        public static int GetImageQuality()
         {
             var quality = 50;
             Int32.TryParse(_GetConfig(ConfigConstant.IMAGE_QUALITY),out quality);
