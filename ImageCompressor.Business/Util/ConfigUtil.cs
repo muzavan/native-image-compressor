@@ -15,6 +15,13 @@ namespace ImageCompressor.Business.Util
             return path;
         }
 
+        public int GetImageQuality()
+        {
+            var quality = 50;
+            Int32.TryParse(_GetConfig(ConfigConstant.IMAGE_QUALITY),out quality);
+            return quality;
+        }
+
         public static List<string> GetAllowedExtensions()
         {
             var extensions = new List<string>();
@@ -44,5 +51,6 @@ namespace ImageCompressor.Business.Util
     {
         public static string FOLDER_PATH = "Folder_Path";
         public static string ALLOW_EXT = "Allowed_Extensions";
+        public static string IMAGE_QUALITY = "Image_Quality";
     }
 }
