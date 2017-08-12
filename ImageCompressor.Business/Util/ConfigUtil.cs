@@ -9,13 +9,6 @@ namespace ImageCompressor.Business.Util
 {
     public class ConfigUtil
     {
-        public static int GetThreadNumber()
-        {
-            var thread = 1;
-            Int32.TryParse(_GetConfig(ConfigConstant.NUM_THREAD), out thread);
-            return thread;
-        }
-
         public static string GetFolderPath()
         {
             var path = string.IsNullOrEmpty(_GetConfig(ConfigConstant.FOLDER_PATH)) ? @"D:\My Toy\C#\ImageCompressor\ImageCompressor.Business.Test\UnitTest\TestFiles\" : _GetConfig(ConfigConstant.FOLDER_PATH);
@@ -49,7 +42,6 @@ namespace ImageCompressor.Business.Util
 
     public static class ConfigConstant
     {
-        public static string NUM_THREAD = "Num_Thread";
         public static string FOLDER_PATH = "Folder_Path";
         public static string ALLOW_EXT = "Allowed_Extensions";
     }
